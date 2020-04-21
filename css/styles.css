@@ -94,6 +94,7 @@ body::-webkit-scrollbar-thumb {
     display: flex;
     align-items: center;
     height: 100%;
+    margin-left: auto;
 }
 .header .nav .nav-link {
     color: #fff;
@@ -602,7 +603,7 @@ input:checked ~ .tab-content {
         width: 100%;
     }
     .section {
-        padding: 30px 0;
+        padding: 40px 0 0;
     }
     .section-title {
         font-size: 30px;
@@ -612,17 +613,22 @@ input:checked ~ .tab-content {
         margin: 0 30px;
         margin-bottom: 40px;
     }
+    .mobile-menu {
+        background: #fff;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        display: none;
+    }
+    
 }
 @media (max-width: 414px) {
     .main {
         background-attachment: scroll;
         background: url(../img/bg.jpg) center left -570px/cover no-repeat;
-    }
-}
-@media (max-width: 375px) {
-    .main {
-        background-attachment: scroll;
-        background: url(../img/bg.jpg) center left -450px/cover no-repeat; 
     }
     .header .nav {
         display: none;
@@ -630,16 +636,39 @@ input:checked ~ .tab-content {
     .header {
         height: 50px;
     }
+    .heading-title {
+        margin-top: 190px;
+        font-size: 50px;
+    }
+    .heading-subtitle {
+        font-size: 30px;
+        margin: 15px 0 40px;
+    }
+    .heading-subtitle span {
+        font-size: 80px;
+    }
     .header .logo {
         height: 30px;
         margin-left: 20px;
     }
     .silver {
+        margin-top: -100px;
         transform: translateX(0px);
+    }
+    .gold {
+        margin-bottom: 60px;
     }
     .platinum {
         transform: translateX(0px);
     }
+}
+@media (max-width: 375px) {
+    .main {
+        background-attachment: scroll;
+        background: url(../img/bg.jpg) center left -450px/cover no-repeat; 
+    }
+    
+    
     .heading-title {
         margin-top: 155px;
         font-size: 36px;
@@ -647,8 +676,5 @@ input:checked ~ .tab-content {
     .heading-subtitle {
         font-size: 26px;
         margin: 15px 0 40px;
-    }
-    .heading-subtitle span {
-        font-size: 80px;
     }
 }
