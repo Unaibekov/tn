@@ -622,7 +622,7 @@ input:checked ~ .tab-content {
 @media (max-width: 375px) {
     .main {
         background-attachment: scroll;
-        background: url(../img/bg.jpg) center left -450px/cover no-repeat;
+        background: url(../img/bg.jpg) center left -450px/cover no-repeat; 
     }
     .header .nav {
         display: none;
