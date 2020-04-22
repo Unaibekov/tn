@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,700i&display=swap&subset=cyrillic" rel="stylesheet">
 </head>
 <body>
+    <div class="mobile-menu"></div>
     <section class="main">
         <header class="header">
             <img src="img/logo.svg" class="logo" alt="logo">
@@ -22,8 +23,11 @@
                     8 800 555 59 11
                     <img id="mail" style="cursor: pointer;" src="img/mail.svg" alt="mail">
                 </div>
-                <div id="auth" class="auth">Личный кабинет</div>
             </div>
+            <div id="auth" class="auth">Личный кабинет</div>
+            <a href="" class="menu-btn">
+            </a>
+            
         </header>
         <div class="container">
             <div class="heading">
@@ -64,7 +68,7 @@
         </div>
     </section>
     <section class="section scale">
-        <div class="container wow fadeInUp">
+        <div class="container wow fadeInUp" data-wow-delay="0.2s">
             <div class="section-title">Шкала начисления бонусов</div>
             <div class="dflex justify-space-center">
             </div>
@@ -88,7 +92,7 @@
         </div>
     </section>
     <section class="section order">
-        <div class="order-visible">
+        <!-- <div class="order-visible">
             <div class="order-rotated">
                 <div class="order-container">
                     <div class="order-title">Как стать участником клуба?</div>
@@ -97,30 +101,30 @@
             <div class="order-container">
                 <div class="order-title">Зарегистрироваться сейчас</div>
             </div>
-        </div>
+        </div> -->
     </section>
     <section class="section order">
         <div class="container">
-        <div class="tabs">
-            <div class="tab">
-                <input type="checkbox" id="chck1">
-                <label class="tab-label" for="chck1">
-                    <div class="order-title">Как получить больше бонусов</div>
-                </label>
-                <div class="tab-content">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum, reiciendis!
+            <div class="tabs">
+                <div class="tab">
+                    <input type="checkbox" id="chck1">
+                    <label class="tab-label" for="chck1">
+                        <div class="order-title">Как получить больше бонусов</div>
+                    </label>
+                    <div class="tab-content">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum, reiciendis!
+                    </div>
+                </div>
+                <div class="tab">
+                    <input type="checkbox" id="chck2">
+                    <label class="tab-label" for="chck2">
+                        <div class="order-title">Как получить больше бонусов</div>
+                    </label>
+                    <div class="tab-content">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. A, in!
+                    </div>
                 </div>
             </div>
-            <div class="tab">
-                <input type="checkbox" id="chck2">
-                <label class="tab-label" for="chck2">
-                    <div class="order-title">Как получить больше бонусов</div>
-                </label>
-                <div class="tab-content">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. A, in!
-                </div>
-            </div>
-        </div>
         </div>
     </section>
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2353248.2071516546!2d48.85360199114715!3d54.8310343687895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x6750d81a5c31b9ae!2z0J_QkNCeIMKr0KLQsNGC0L3QtdGE0YLRjMK7!5e0!3m2!1sru!2sru!4v1587387569813!5m2!1sru!2sru" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
@@ -154,10 +158,8 @@
         <div class="modal-dialog">
             <div class="modal-shape"></div>
             <div class="modal-inner">
-                <div class="modal-header">
-                    <h3 class="modal-title">Вход в кабинет</h3>
-                    <button id="closeModalAuth" class="close">&times;</button>
-                </div>
+                <h3 class="modal-title">Вход в кабинет</h3>
+                <button id="closeModalAuth" class="close">&times;</button>
                 <input type="text" class="input" placeholder="Нижний номер карты (17 цифр)">
                 <input type="password" class="input input-password" placeholder="Пароль">
                 <div class="buttons dflex align-center justify-space-between">
@@ -188,23 +190,11 @@
     </div>
     <div id="modalMail" class="modal">
         <div class="modal-dialog">
-            <div class="modal-header">
+            <div class="modal-shape"></div>
+            <div class="modal-inner">
                 <h3 class="modal-title">Обратная связь</h3>
                 <button id="closeModalMail" class="close">&times;</button>
             </div>
-        </div>
-    </div>
-    <div class="mobile-menu">
-        <div class="mobile-nav">
-            <a href class="nav-link">Об акции</a>
-            <a href class="nav-link">Призы</a>
-            <a href class="nav-link">Победители</a>
-            <a href class="nav-link">Вопросы-ответы</a>
-            <div class="contacts">
-                8 800 555 59 11
-                <img id="mail" style="cursor: pointer;" src="img/mail.svg" alt="mail">
-            </div>
-            <div id="auth" class="auth">Личный кабинет</div>
         </div>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
