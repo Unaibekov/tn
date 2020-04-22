@@ -83,7 +83,12 @@ $('.menu-btn').click(function(e){
 	$(this).toggleClass('mobile-menu-open');
 });
 
-
+const icons = document.querySelectorAll('.icon');
+icons.forEach (icon => {  
+  icon.addEventListener('click', (event) => {
+    icon.classList.toggle("open");
+  });
+});
 
 
 new WOW().init();
