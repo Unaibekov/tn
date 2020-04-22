@@ -165,12 +165,19 @@
     </footer>
     <div id="modalAuth" class="modal">
         <div class="modal-dialog">
-            <div class="modal-shape"></div>
             <div class="modal-inner">
                 <h3 class="modal-title">Вход в кабинет</h3>
                 <button id="closeModalAuth" class="close">&times;</button>
                 <input type="text" class="input" placeholder="Нижний номер карты (17 цифр)">
                 <input type="password" class="input input-password" placeholder="Пароль">
+                <div id="login" style="
+                    font-size: 14px; 
+                    padding: 10px;
+                    text-decoration: underline; 
+                    cursor: pointer; 
+                    font-weight: 100;">
+                    Забыли логин или пароль
+                </div>
                 <div class="buttons dflex align-center justify-space-between">
                     <button class="button primary">Войти</button>
                     <button id="registration" class="button secondary">Регистрация</button>
@@ -183,23 +190,13 @@
                         </div>
                     </div>
                 </div>
-                <div id="login" style="
-                    margin-top: 20px; 
-                    font-size: 14px; 
-                    text-decoration: underline; 
-                    cursor: pointer; 
-                    text-align: center; 
-                    color: #fff; 
-                    font-weight: 100;">
-                    Забыли логин или пароль
-                </div>
+                
 
             </div>
         </div>
     </div>
     <div id="modalMail" class="modal">
         <div class="modal-dialog">
-            <div class="modal-shape"></div>
             <div class="modal-inner">
                 <h3 class="modal-title">Обратная связь</h3>
                 <button id="closeModalMail" class="close">&times;</button>
