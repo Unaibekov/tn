@@ -76,6 +76,16 @@ $('#closeModalAuth').click(function(e){
 	$('#modalAuth').removeClass('modal-open');
 });
 
+// auth mobile modal
+$('#authMobile').click(function(e){
+	e.preventDefault();
+	$('#modalAuth').addClass('modal-open');
+});
+$('#closeModalAuth').click(function(e){
+	e.preventDefault();
+	$('#modalAuth').removeClass('modal-open');
+});
+
 // open mobile menu
 $('.menu-btn').click(function(e){
 	e.preventDefault();

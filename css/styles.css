@@ -179,6 +179,16 @@ body::-webkit-scrollbar-thumb {
     cursor: pointer;
     margin-left: 0;
 }
+.auth-mobile {
+    height: 100%;
+    background: #00B274;
+    padding: 0 20px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-left: auto;
+}
 .contacts img {
     margin-left: 15px;
 }
@@ -733,7 +743,10 @@ input:checked ~ .tab-content {
         background: url(../img/bg.jpg) center right -340px/cover no-repeat;
     }
     .auth {
-        margin-left: auto;
+        display: none;
+    }
+    .auth-mobile {
+        display: flex;
     }
     .header {
         height: 50px;
