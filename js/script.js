@@ -3,30 +3,27 @@ $( () => {
 	//On Scroll Functionality
 	$(window).scroll( () => {
 		var windowTop = $(window).scrollTop();
-        windowTop > 250 ? $('.header').addClass('header-shadow') : $('.header').removeClass('header-shadow');
-		windowTop > 250 ? $('.logo').addClass('logo-scroll') : $('.logo').removeClass('logo-scroll');
-		windowTop > 250 ? $('.menu-btn').addClass('menu-btn-scroll') : $('.menu-btn').removeClass('menu-btn-scroll');
-		windowTop > 250 ? $('.mobile-menu').addClass('mobile-menu-scroll') : $('.mobile-menu').removeClass('mobile-menu-scroll');
-
+		windowTop > 250 ? $('.header').addClass('header-shadow') : $('.header').removeClass('header-shadow');
+		windowTop > 250 ? $('.logoName').addClass('logoName-scroll') : $('.logoName').removeClass('logoName-scroll');
+        windowTop > 250 ? $('.nav-link').addClass('nav-link-scroll') : $('.nav-link').removeClass('nav-link-scroll');
+        windowTop > 250 ? $('.auth').addClass('auth-scroll') : $('.auth').removeClass('auth-scroll');
+        windowTop > 250 ? $('.contacts').addClass('contacts-scroll') : $('.contacts').removeClass('contacts-scroll');
+        windowTop > 250 ? $('.nav').addClass('nav-scroll') : $('.nav').removeClass('nav-scroll');
 		
-
-        
-  
-    // windowTop > 100 ? $('ul').css('top','100px') : $('ul').css('top','160px');
 	});
 	
 	//Click Logo To Scroll To Top
 	$('#top').on('click', () => {
 		$('html,body').animate({
 			scrollTop: 0
-		},500);
+		},100);
 	});
 	
 	//Smooth Scrolling Using Navigation Menu
 	$('a[href*="#"]').on('click', function(e){
 		$('html,body').animate({
-			scrollTop: $($(this).attr('href')).offset().top - 100
-		},500);
+			scrollTop: $($(this).attr('href')).offset().top - 60
+		},100);
 		e.preventDefault();
 	});	
 
@@ -71,7 +68,7 @@ $('#auth').click(function(e){
 	e.preventDefault();
 	$('#modalAuth').addClass('modal-open');
 });
-$('#closeModalAuth').click(function(e){
+$('#modalAuth').click(function(e){
 	e.preventDefault();
 	$('#modalAuth').removeClass('modal-open');
 });

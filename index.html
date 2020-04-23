@@ -13,17 +13,20 @@
     <div class="mobile-menu"></div>
     <section class="main">
         <header class="header">
-            <img src="img/logo.svg" class="logo" alt="logo">
+            <div class="logo">
+                <img id="top" src="img/logoTnFlame.svg" alt="logoFlame">
+                <img id="top" src="img/logoTnName.svg" class="logoName" alt="logoName">
+            </div>
             <div class="nav">
                 <a href class="nav-link">Об акции</a>
                 <a href class="nav-link">Призы</a>
                 <a href class="nav-link">Победители</a>
                 <a href class="nav-link">Вопросы-ответы</a>
-                <div class="contacts">
-                    8 800 555 59 11
-                    <img id="mail" style="cursor: pointer;" src="img/mail.svg" alt="mail">
-                </div>
             </div>
+            <a href="tel:+78005555911" class="contacts">
+                8 800 555 59 11
+                <img id="mail" style="cursor: pointer; " src="img/mail.svg" alt="mail">
+            </a>
             <div id="auth" class="auth">Личный кабинет</div>
             <div id="authMobile" class="auth-mobile">
                 <img src="img/user.svg" alt="user">
@@ -167,7 +170,7 @@
         <div class="modal-dialog">
             <div class="modal-inner">
                 <h3 class="modal-title">Вход в кабинет</h3>
-                <button id="closeModalAuth" class="close">&times;</button>
+                <button id="modalAuth" class="close">&times;</button>
                 <input type="text" class="input" placeholder="Нижний номер карты (17 цифр)">
                 <input type="password" class="input input-password" placeholder="Пароль">
                 <div id="login" style="
@@ -190,8 +193,6 @@
                         </div>
                     </div>
                 </div>
-                
-
             </div>
         </div>
     </div>
