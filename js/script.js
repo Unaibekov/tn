@@ -68,9 +68,47 @@ $('#auth').click(function(e){
 	e.preventDefault();
 	$('#modalAuth').addClass('modal-open');
 });
-$('#modalAuth').click(function(e){
+$('#close').click(function(e){
 	e.preventDefault();
 	$('#modalAuth').removeClass('modal-open');
+});
+
+// auth modal
+$('#authHeading').click(function(e){
+	e.preventDefault();
+	$('#modalAuth').addClass('modal-open');
+});
+$('#close').click(function(e){
+	e.preventDefault();
+	$('#modalAuth').removeClass('modal-open');
+});
+
+// registration
+$('#registration-open').click(function(e){
+	e.preventDefault();
+	$('#registration').addClass('modal-open');
+});
+$('#close-registration').click(function(e){
+	e.preventDefault();
+	$('#registration').removeClass('modal-open');
+});
+$('#close-registration-second').click(function(e){
+	e.preventDefault();
+	$('#registration').removeClass('modal-open');
+});
+
+// forgot password
+$('#login').click(function(e){
+	e.preventDefault();
+	$('#forgot-password').addClass('modal-open');
+});
+$('#close-forgot-password').click(function(e){
+	e.preventDefault();
+	$('#forgot-password').removeClass('modal-open');
+});
+$('#close-forgot-password-second').click(function(e){
+	e.preventDefault();
+	$('#forgot-password').removeClass('modal-open');
 });
 
 // auth mobile modal

@@ -591,7 +591,10 @@ input:checked ~ .tab-content {
     display: none;
 }
 .modal-open {
-    display: flex;
+    display: flex !important;
+}
+#forgot-password, #registration {
+    z-index: 9999;
 }
 .modal-dialog {
     max-width: 500px;
@@ -632,7 +635,7 @@ input:checked ~ .tab-content {
 }
 .modal-inner .button {
     /* padding: 0 30px; */
-    width: 80%;
+    width: 100%;
     height: 55px;
     background: #FFFFFF;
     border: 1px solid #00B274;
@@ -683,7 +686,6 @@ input:checked ~ .tab-content {
     background: transparent;
     cursor: pointer;
     transition: 0.3s;
-    padding: 0 10px;
     border-radius: 5px;
     position: absolute;
     top: 10px;
@@ -692,9 +694,36 @@ input:checked ~ .tab-content {
     cursor: pointer;
 }
 .close:hover {
-    color: #fff;
-    background: #00B274;
+    color: #00B274;
     transition: 0.3s;
+}
+
+.registration {
+    position: absolute;
+    background: #fff;
+    height: 100%;
+    width: 100%;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    padding: 40px;
+    display: none;
+    flex-direction: column;
+}
+.registration-open {
+    display: flex;
+}
+.close-registration {
+    display: none;
+}
+#registration-open, #login {
+    margin: 10px 15px 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+#registration-open:hover, #login:hover {
+    transition: 0.3s;
+    color: #00b274;
 }
 
 @media (max-width: 1024px) {
@@ -828,6 +857,9 @@ input:checked ~ .tab-content {
         width: 30px;
     }
     .modal-inner {
+        padding: 20px;
+    }
+    .registration {
         padding: 20px;
     }
 }

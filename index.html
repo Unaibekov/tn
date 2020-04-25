@@ -49,7 +49,7 @@
                         <span style="color: red; font-weight: bold; font-style: italic;">6%</span><br>
                         на топливо и не только
                     </div>
-                    <div class="heading-button">Зарегистрироваться</div>
+                    <div id="authHeading" class="heading-button">Зарегистрироваться</div>
                 </div>
             </div>
         </div>
@@ -171,33 +171,44 @@
             </div>
         </div>
     </footer>
+    <div id="registration" class="modal">
+        <div class="modal-dialog">
+            <div class="modal-inner">
+                <button id="close-registration" class="close">&times;</button>
+                <h1 class="modal-title">Как активировать карту?</h1>
+                <div>
+                    <p>Отправьте смс с вашим персональным кодом, указанным на чеке полученным с картой, на номер&nbsp;+7&nbsp;958&nbsp;760&nbsp;00&nbsp;70.</p>
+                    <p>В ответ придет смс об успешной активации и пароль для доступа в личный кабинет.</p>
+                </div>
+                <button id="close-registration-second" class="button primary">Закрыть</button>
+            </div>
+        </div>
+    </div>
+    <div id="forgot-password" class="modal">
+        <div class="modal-dialog">
+            <div class="modal-inner">
+                <button id="close-forgot-password" class="close">&times;</button>
+                <h1 class="modal-title">Забыли логин?</h1>
+                <p>Выслать новый пароль?</p>
+                <div class="buttons dflex align-center">
+                    <button class="button primary">Да</button>
+                    <div style="width: 100%; text-align: center; cursor: pointer;" id="close-forgot-password-second">Нет</div>
+                </div>
+            </div>
+        </div>
+    </div>
     <div id="modalAuth" class="modal">
         <div class="modal-dialog">
             <div class="modal-inner">
                 <h3 class="modal-title">Вход в кабинет</h3>
-                <button id="modalAuth" class="close">&times;</button>
+                <button id="close" class="close">&times;</button>
                 <input type="text" class="input" placeholder="Нижний номер карты (17 цифр)">
                 <input type="password" class="input input-password" placeholder="Пароль">
-                <div id="login" style="
-                    font-size: 14px; 
-                    padding: 10px;
-                    text-decoration: underline; 
-                    cursor: pointer; 
-                    font-weight: 100;">
-                    Забыли пароль
+                <div class="dflex justify-space-between align-center">
+                    <div id="login">Забыли пароль?</div>
+                    <div id="registration-open">Зарегистрироваться</div>
                 </div>
-                <div class="buttons dflex align-center justify-space-between">
-                    <button class="button primary">Войти</button>
-                    <button id="registration" class="button secondary">Регистрация</button>
-                    <div id="modal" class="modal">
-                        <div class="modal-content">
-                            <span id="close" class="close">x</span>
-                            <h1 class="instruction-title">Как активировать карту</h1>
-                            <p>Отправьте смс с вашим персональным кодом, указанном на чеке, на номер +7 958 760 00 70.</p>
-                            <p>В ответ придет смс об успешной активации и пароль для доступа в личный кабинет.</p>
-                        </div>
-                    </div>
-                </div>
+                <button class="button primary">Войти</button>
             </div>
         </div>
     </div>
