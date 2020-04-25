@@ -50,6 +50,7 @@ body::-webkit-scrollbar-thumb {
     max-width: 1200px;
     width: 90%;
     margin: auto;
+    height: 100%;
 }
 .main {
     height: 100vh;
@@ -289,26 +290,42 @@ body::-webkit-scrollbar-thumb {
 }
 
 /* HEADING */
+.heading-block {
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
 .heading {
-    transform-style: preserve-3d;
-
+    margin: 20% 0;
 }
 .heading-title {
-    margin-top: 200px;
     text-transform: uppercase;
-    font-size: 70px;
+    font-size: 90px;
     font-weight: 700;
     color: #fff;
     font-style: italic;
-    line-height: 1;
     display: flex;
 }
 .heading-subtitle {
     color: #fff;
     font-weight: 100;
     font-size: 40px;
-    line-height: 1;
+    /* line-height: 1; */
     margin: 15px 0 40px;
+}
+.heading-button {
+    background: #00B274;
+    padding: 20px 0;
+    cursor: pointer;
+    transition: 0.5s;
+    text-align: center;
+    max-width: 250px;
+    width: 90%;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 300;
+    border-radius: 10px;
+    margin-top: 50px;
 }
 
 /* SECTION */
@@ -681,11 +698,15 @@ input:checked ~ .tab-content {
 }
 
 @media (max-width: 1024px) {
+    .heading-title {
+        font-size: 70px;
+    }
+    .heading-block {
+        align-items: flex-end;
+        margin-bottom: 100px;
+    }
     .logoName-scroll {
         opacity: 1;
-    }
-    #down {
-        display: none;
     }
     .menu-btn {
         display: block;
@@ -743,7 +764,9 @@ input:checked ~ .tab-content {
     }
     .main {
         background-attachment: scroll;
-        height: 600px;
+        background: url(../img/bg.jpg) center right -200px/cover no-repeat;
+
+        /* height: 600px; */
     }
     .auth {
         display: none;
@@ -776,6 +799,13 @@ input:checked ~ .tab-content {
 }
 
 @media (max-width: 575.98px) {
+    #down {
+        display: none;
+    }
+    .heading-block {
+        align-items: flex-end;
+        /* margin-bottom: 100px; */
+    }
     .order-container {
         flex-direction: column;
         width: 100%;
@@ -807,7 +837,6 @@ input:checked ~ .tab-content {
         background: url(../img/bg.jpg) center right -250px/cover no-repeat;
     }
     .heading-title {
-        margin-top: 190px;
         font-size: 50px;
         display: block;
     }
@@ -827,9 +856,15 @@ input:checked ~ .tab-content {
     }
 }
 @media (max-width: 375px) {
+    .heading-subtitle {
+        font-size: 26px;
+        margin: 15px 0 40px;
+    }
+}
+
+@media (max-width: 320px) {
     .heading-title {
-        margin-top: 155px;
-        font-size: 36px;
+        font-size: 45px;
     }
     .heading-subtitle {
         font-size: 26px;
