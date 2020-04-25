@@ -68,7 +68,7 @@ body::-webkit-scrollbar-thumb {
     background: blue;
     left: 0;
     top: 80px;
-    z-index: 2;
+    z-index: 4;
     display: none;
 }
 .menu-btn {
@@ -594,7 +594,7 @@ input:checked ~ .tab-content {
     display: flex !important;
 }
 #forgot-password, #registration {
-    z-index: 9999;
+    z-index: 3;
 }
 .modal-dialog {
     max-width: 500px;
