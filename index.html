@@ -58,7 +58,7 @@
     </section>
     <section id="participant" class="section participant">
         <div class="container">
-            <div class="section-title wow fadeInUp">Как стать участником клуба</div>
+            <div class="section-title wow fadeInUp">Как стать участником&nbsp;клуба</div>
             <div class="section-items">
                 <div class="item wow fadeInUp" data-wow-delay="0.2s">
                     <div class="item-image-block">
@@ -87,7 +87,7 @@
     <section class="section scale">
         <div class="container wow fadeInUp" data-wow-delay="0.2s">
             <div class="dflex align-center justify-space-center flex-wrap">
-                <img style="height: 200px; margin: 0 10px;" src="img/scale-percent.svg" alt="scale-percent">
+                <img style="margin: 0 10px;" src="img/scale-percent.svg" alt="scale-percent">
                 <div>
                     <div class="section-title">Шкала начисления бонусов</div>
                     <div class="dflex justify-space-center flex-wrap">
@@ -168,6 +168,16 @@
                         <a href="https://azs.tatneft.ru/club/program_rules/" target="blank" class="footer-link">Правила программы</a>
                     </div>
                 </div>
+                <div class="dflex">
+                    <div class="app-logo">
+                        <img src="img/apple.svg" alt="apple">
+                        <div style="font-size: 10px;">Доступно в<br><span style="font-size: 18px;">App Store</span></div>
+                    </div>
+                    <div class="app-logo">
+                        <img src="img/google.svg" alt="apple">
+                        <div style="font-size: 10px;">Доступно в<br><span style="font-size: 18px;">Google Play</span></div>
+                    </div>
+                </div>
             </div>
         </div>
     </footer>
@@ -177,10 +187,10 @@
                 <button id="close-registration" class="close">&times;</button>
                 <h1 class="modal-title">Как активировать карту?</h1>
                 <div>
-                    <p>Отправьте смс с вашим персональным кодом, указанным на чеке полученным с картой, на номер&nbsp;+7&nbsp;958&nbsp;760&nbsp;00&nbsp;70.</p>
+                    <p>Отправьте смс с вашим персональным кодом, указанным на чеке полученным с картой, на номер&nbsp;<span><a href="sms:+79587600070">+7&nbsp;958&nbsp;760&nbsp;00&nbsp;70</a></span>.</p>
                     <p>В ответ придет смс об успешной активации и пароль для доступа в личный кабинет.</p>
                 </div>
-                <button id="close-registration-second" class="button primary">Закрыть</button>
+                <button style="margin-top: 10px;" id="close-registration-second" class="button primary">Закрыть</button>
             </div>
         </div>
     </div>
@@ -189,7 +199,7 @@
             <div class="modal-inner">
                 <button id="close-forgot-password" class="close">&times;</button>
                 <h1 class="modal-title">Забыли логин?</h1>
-                <p>Выслать новый пароль?</p>
+                <p style="margin: 30px 0;">Выслать новый пароль?</p>
                 <div class="buttons dflex align-center">
                     <button class="button primary">Да</button>
                     <div style="width: 100%; text-align: center; cursor: pointer;" id="close-forgot-password-second">Нет</div>
@@ -205,8 +215,8 @@
                 <input type="text" class="input" placeholder="Нижний номер карты (17 цифр)">
                 <input type="password" class="input input-password" placeholder="Пароль">
                 <div class="dflex justify-space-between align-center">
-                    <div id="login">Забыли пароль?</div>
-                    <div id="registration-open">Зарегистрироваться</div>
+                    <div style="font-weight: 500;" id="registration-open">Зарегистрироваться</div>
+                    <div style="font-weight: 300;" id="login">Забыли пароль?</div>
                 </div>
                 <button class="button primary">Войти</button>
             </div>
