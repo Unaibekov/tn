@@ -535,7 +535,8 @@ input:checked ~ .tab-content {
     color: rgba(255, 255, 255, 0.6);
     font-size: 14px;
     margin-bottom: 5px;
-    display: flex;
+    text-align: center;
+    /* display: flex; */
 }
 .icon-links {
     display: flex;
@@ -550,7 +551,6 @@ input:checked ~ .tab-content {
     margin-right: 15px;
 }
 .copyright {
-    margin-right: 15px;
     text-decoration: none;
 }
 .app-logo {
@@ -815,6 +815,28 @@ input:checked ~ .tab-content {
 }
 
 @media (max-width: 575.98px) {
+    .footer {
+        padding: 20px 0;
+    }
+    .footer-link {
+        order: 3;
+        width: 100%;
+    }
+    .app-logo img {
+        margin-left: 10px;
+        margin-right: 0px !important;
+    }
+    .app-logo {
+        border: none;
+        padding: 0px;
+        margin: 0;
+    }
+    .app-logo > div {
+        display: none;
+    }
+    .app-logo img {
+        margin-right: 7px;
+    }
     #down {
         display: none;
     }
@@ -888,5 +910,8 @@ input:checked ~ .tab-content {
     .heading-subtitle {
         font-size: 26px;
         margin: 15px 0 40px;
+    }
+    #registration-open, #login {
+        margin: 5px 15px 10px;
     }
 }
