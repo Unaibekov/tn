@@ -3,12 +3,12 @@ $( () => {
 	//On Scroll Functionality
 	$(window).scroll( () => {
 		var windowTop = $(window).scrollTop();
-		windowTop > 250 ? $('.header').addClass('header-shadow') : $('.header').removeClass('header-shadow');
-		windowTop > 250 ? $('.logoName').addClass('logoName-scroll') : $('.logoName').removeClass('logoName-scroll');
-        windowTop > 250 ? $('.nav-link').addClass('nav-link-scroll') : $('.nav-link').removeClass('nav-link-scroll');
-        windowTop > 250 ? $('.auth').addClass('auth-scroll') : $('.auth').removeClass('auth-scroll');
-        windowTop > 250 ? $('.contacts').addClass('contacts-scroll') : $('.contacts').removeClass('contacts-scroll');
-		windowTop > 250 ? $('.nav').addClass('nav-scroll') : $('.nav').removeClass('nav-scroll');
+		windowTop > 150 ? $('.header').addClass('header-shadow') : $('.header').removeClass('header-shadow');
+		windowTop > 150 ? $('.logoName').addClass('logoName-scroll') : $('.logoName').removeClass('logoName-scroll');
+        windowTop > 150 ? $('.nav-link').addClass('nav-link-scroll') : $('.nav-link').removeClass('nav-link-scroll');
+        windowTop > 150 ? $('.auth').addClass('auth-scroll') : $('.auth').removeClass('auth-scroll');
+        windowTop > 150 ? $('.contacts').addClass('contacts-scroll') : $('.contacts').removeClass('contacts-scroll');
+		// windowTop > 100 ? $('.nav').addClass('nav-scroll') : $('.nav').removeClass('nav-scroll');
         windowTop > 250 ? $('#top-second').addClass('top-second-open') : $('#top-second').removeClass('top-second-open');
 	});
 	
@@ -40,17 +40,7 @@ $('#closeModalMail').click(function(e){
 });
 
 // auth modal
-$('#auth').click(function(e){
-	e.preventDefault();
-	$('#modalAuth').addClass('modal-open');
-});
-$('#close').click(function(e){
-	e.preventDefault();
-	$('#modalAuth').removeClass('modal-open');
-});
-
-// auth modal
-$('#authHeading').click(function(e){
+$('#auth, #authHeading, #authMobile').click(function(e){
 	e.preventDefault();
 	$('#modalAuth').addClass('modal-open');
 });
@@ -64,11 +54,7 @@ $('#registration-open').click(function(e){
 	e.preventDefault();
 	$('#registration').addClass('modal-open');
 });
-$('#close-registration').click(function(e){
-	e.preventDefault();
-	$('#registration').removeClass('modal-open');
-});
-$('#close-registration-second').click(function(e){
+$('#close-registration, #close-registration-second').click(function(e){
 	e.preventDefault();
 	$('#registration').removeClass('modal-open');
 });
@@ -78,23 +64,9 @@ $('#login').click(function(e){
 	e.preventDefault();
 	$('#forgot-password').addClass('modal-open');
 });
-$('#close-forgot-password').click(function(e){
+$('#close-forgot-password, #close-forgot-password-second').click(function(e){
 	e.preventDefault();
 	$('#forgot-password').removeClass('modal-open');
-});
-$('#close-forgot-password-second').click(function(e){
-	e.preventDefault();
-	$('#registration').removeClass('modal-open');
-});
-
-// auth mobile modal
-$('#authMobile').click(function(e){
-	e.preventDefault();
-	$('#modalAuth').addClass('modal-open');
-});
-$('#closeModalAuth').click(function(e){
-	e.preventDefault();
-	$('#modalAuth').removeClass('modal-open');
 });
 
 // open mobile menu
