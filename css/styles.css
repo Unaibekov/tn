@@ -761,7 +761,7 @@ input:checked ~ .tab-content {
     }
     .heading-block img{
         height: auto;
-        width: 100%;
+        width: 90%;
         margin: 20% 0 5%;
     }
     .logoName-scroll {
