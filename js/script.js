@@ -8,19 +8,19 @@ $( () => {
         windowTop > 250 ? $('.nav-link').addClass('nav-link-scroll') : $('.nav-link').removeClass('nav-link-scroll');
         windowTop > 250 ? $('.auth').addClass('auth-scroll') : $('.auth').removeClass('auth-scroll');
         windowTop > 250 ? $('.contacts').addClass('contacts-scroll') : $('.contacts').removeClass('contacts-scroll');
-        windowTop > 250 ? $('.nav').addClass('nav-scroll') : $('.nav').removeClass('nav-scroll');
-		
+		windowTop > 250 ? $('.nav').addClass('nav-scroll') : $('.nav').removeClass('nav-scroll');
+        windowTop > 250 ? $('#top-second').addClass('top-second-open') : $('#top-second').removeClass('top-second-open');
 	});
 	
 	//Click Logo To Scroll To Top
-	$('#top').on('click', () => {
+	$('#top, #top-second').on('click', () => {
 		$('html,body').animate({
 			scrollTop: 0
 		},100);
 	});
 	
 	//Smooth Scrolling Using Navigation Menu
-	$('a[href*="#"]').on('click', function(e){
+	$('#participant').on('click', function(e){
 		$('html,body').animate({
 			scrollTop: $($(this).attr('href')).offset().top - 50
 		},100);
@@ -28,30 +28,6 @@ $( () => {
 	});	
 
 });
-
-// const authButton = document.querySelector('#auth');
-// const mailButton = document.querySelector('#mail');
-
-// const modal = document.querySelector('#modalAuth');
-// const modalMail = document.querySelector('#modalMail');
-
-// const closeAuth = document.querySelector('#closeModalAuth');
-// const closeMail = document.querySelector('#closeModalMail');
-
-
-// authButton.addEventListener('click', function (event) {
-//     modal.classList.add("modal-open");
-// });
-// closeAuth.addEventListener('click', function (event) {
-//     modal.classList.remove("modal-open");
-// });
-
-// mailButton.addEventListener('click', function (event) {
-//     modalMail.classList.add("modal-open");
-// });
-// closeMail.addEventListener('click', function (event) {
-//     modalMail.classList.remove("modal-open");
-// });
 
 // mail modal
 $('#mail').click(function(e){
@@ -108,7 +84,7 @@ $('#close-forgot-password').click(function(e){
 });
 $('#close-forgot-password-second').click(function(e){
 	e.preventDefault();
-	$('#forgot-password').removeClass('modal-open');
+	$('#registration').removeClass('modal-open');
 });
 
 // auth mobile modal

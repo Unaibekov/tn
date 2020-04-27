@@ -236,6 +236,94 @@ body::-webkit-scrollbar-thumb {
 }
 
 
+/* TOP */
+.top-second-open  {
+    transform: translateY(0px) !important;
+    transition: 0.5s;
+}
+
+.top-second {
+    right: 20px;
+    position: fixed;
+    bottom: 20px;
+    transform: translateY(95px);
+    width: 46px;
+    height: 46px;
+    margin-left: -23px;
+    background: #008a74;
+    border-radius: 100%;
+    box-sizing: border-box;
+    z-index: 10;
+    transition: 0.5s;
+  }
+  
+  .top-second::after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    content: "";
+    width: 16px;
+    height: 16px;
+    margin: -3px 0 0 -8px;
+    border-left: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    -webkit-transform: rotate(135deg);
+    transform: rotate(135deg);
+    box-sizing: border-box;
+  }
+  
+  .top-second::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    content: "";
+    width: 46px;
+    height: 46px;
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.1);
+    border-radius: 100%;
+    opacity: 0;
+    -webkit-animation: sdb03 3s infinite;
+    animation: sdb03 3s infinite;
+    box-sizing: border-box;
+  }
+  
+  @-webkit-keyframes sdb03 {
+    0% {
+      opacity: 0;
+    }
+    30% {
+      opacity: 1;
+    }
+    60% {
+      box-shadow: 0 0 0 30px rgba(255, 255, 255, 0.3);
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
+  @keyframes sdb03 {
+    0% {
+      opacity: 0;
+    }
+    30% {
+      opacity: 1;
+    }
+    60% {
+      box-shadow: 0 0 0 30px rgba(255, 255, 255, 0.3);
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
+  /* TOP */
+  
+
+
 /* DOWN */
 #down {
     color: white;
@@ -729,6 +817,9 @@ input:checked ~ .tab-content {
         width: 50px;
         height: 50px;
     }
+    .footer {
+        padding: 40px 0;
+    }
 
     /* nav-icon-2 */
     .nav-icon-2{
@@ -781,8 +872,6 @@ input:checked ~ .tab-content {
     .main {
         background-attachment: scroll;
         background: url(../img/bg.jpg) center right -200px/cover no-repeat;
-
-        /* height: 600px; */
     }
     .auth {
         display: none;
@@ -823,7 +912,7 @@ input:checked ~ .tab-content {
         width: 100%;
     }
     .app-logo img {
-        margin-left: 10px;
+        margin-left: 15px;
         margin-right: 0px !important;
     }
     .app-logo {
