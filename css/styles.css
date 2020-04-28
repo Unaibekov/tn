@@ -85,6 +85,7 @@ body::-webkit-scrollbar-thumb {
     height: 40px;
     border: none;
     cursor: pointer;
+    display: block;
 }
 .slider .slick-arrow.slick-prev {
     left: 20px;
@@ -938,12 +939,10 @@ input:checked ~ .tab-content {
 }
 
 @media (max-width: 575.98px) {
-    .slider .slick-arrow.slick-prev {
-        display: none;
+    .slider .slick-arrow {
+        display: none !important;
     }
-    .slider .slick-arrow.slick-next {
-        display: none;
-    }
+    
     .heading {
         margin-right: auto;
     }
