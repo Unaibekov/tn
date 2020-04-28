@@ -29,6 +29,27 @@ $( () => {
 
 });
 
+
+$(document).ready(function(){
+    $('.slider').slick({
+        arrows:true, 
+        dots:false,
+        adaptiveHeight:true,
+        speed:1000,
+        easing:'ease',
+        autoplay:false,
+        autoplaySpeed:5000,
+        pauseOnFocus:true,
+        pauseOnHover:true,
+        pauseOnDotsHover:true,
+        
+    });
+});
+
+
+
+
+
 // mail modal
 $('#mail').click(function(e){
 	e.preventDefault();

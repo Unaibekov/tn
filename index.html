@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,700i&display=swap&subset=cyrillic" rel="stylesheet">
 </head>
 <body>
-    <div class="mobile-menu"></div>
+    <!-- <div class="mobile-menu"></div> -->
     <section class="main">
         <header class="header">
             <div class="logo">
@@ -20,7 +20,7 @@
             </div>
             <div style="margin-left: auto;" class="dflex align-center">
                 <a href="tel:+78005555911" class="contacts">
-                    8 800 555 59 11
+                    8 800 555 59 11 
                     <img id="mail" style="cursor: pointer; " src="img/mail.svg" alt="mail">
                 </a>
                 <div id="auth" class="auth">Личный кабинет</div>
@@ -29,28 +29,61 @@
                 </div>
             </div>
             
-            <div class="btn-o" id="Button_Nav" onclick="Toggle_Menu()"></div>
+            <!-- <div class="btn-o" id="Button_Nav" onclick="Toggle_Menu()"></div>
             <a href="" class="menu-btn">
                 <div class="icon nav-icon-2">
                     <span></span>
                     <span></span>
                 </div>
-            </a>
+            </a> -->
         </header>
-        <div class="container">
-            <div class="heading-block">
-                <img src="img/slide-item.png" alt="">
-                <div class="heading">
-                    <div class="heading-title">Клуб<br><span style="color: red;">чемпионов</span></div>
-                    <div class="heading-subtitle">
-                        Чемпионские бонусы<br>с выгодой до 
-                        <span style="color: red; font-weight: bold; font-style: italic;">6%</span><br>
-                        на топливо и не только
+        <div class="slider">
+            <div class="slider-item">
+                <div class="container">
+                    <div class="heading-block">
+                        <img src="img/slide-item.png" alt="">
+                        <div class="heading">
+                            <div class="heading-title">Клуб<br><span style="color: red;">чемпионов</span></div>
+                            <div class="heading-subtitle">
+                                Чемпионские бонусы<br>с выгодой до 
+                                <span style="color: red; font-weight: bold; font-style: italic;">6%</span><br>
+                                на топливо и не только
+                            </div>
+                            <div id="authHeading" class="heading-button">Зарегистрироваться</div>
+                        </div>
                     </div>
-                    <div id="authHeading" class="heading-button">Зарегистрироваться</div>
+                </div>
+            </div>
+            <div class="slider-item">
+                <div class="container">
+                    <div class="heading-block">
+                        <img src="img/tyres.png" alt="">
+                        <div class="heading">
+                            <div class="heading-title">Дарим<br>бонусы</div>
+                            <div class="heading-subtitle">
+                                За совершенные покупки<br>в интернет-магазине<br><span>
+                                    <a style="color: #fff; text-decoration: none; font-weight: bold;" href="https://kamatyres.shop/" target="blank">kamatyres.shop</a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-item">
+                <div class="container">
+                    <div class="heading-block">
+                        <img src="img/coffee.png" alt="">
+                        <div class="heading">
+                            <div class="heading-title">Возвращаем<br>10%&nbsp;бонусами</div>
+                            <div class="heading-subtitle">
+                                За покупку ароматного кофе
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+        
         <a href="#top-second" id="top-second" class="top-second"><span></span></a>
 	    <!-- <a href="#participant" id="down"><span></span>Подробнее</a> -->
     </section>
@@ -231,7 +264,9 @@
         </div>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-	<script src="js/wow.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
+    <script src="js/slick.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
