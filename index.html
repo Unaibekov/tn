@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/animate.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,700i&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Exo+2:400,700&display=swap&subset=cyrillic" rel="stylesheet">
 </head>
 <body>
     <!-- <div class="mobile-menu"></div> -->
@@ -23,12 +24,11 @@
                     8 800 555 59 11 
                     <img id="mail" style="cursor: pointer; " src="img/mail.svg" alt="mail">
                 </a>
-                <div id="auth" class="auth">Личный кабинет</div>
+                <a href="#" id="auth" class="button">Личный кабинет</a>
                 <div id="authMobile" class="auth-mobile">
                     <img src="img/user.svg" alt="user">
                 </div>
             </div>
-            
             <!-- <div class="btn-o" id="Button_Nav" onclick="Toggle_Menu()"></div>
             <a href="" class="menu-btn">
                 <div class="icon nav-icon-2">
@@ -49,7 +49,7 @@
                                 <span style="color: red; font-weight: bold; font-style: italic;">6%</span><br>
                                 на топливо и не только
                             </div>
-                            <div id="authHeading" class="heading-button">Зарегистрироваться</div>
+                            <a href="#" id="authHeading" class="button">Зарегистрироваться</a>
                         </div>
                     </div>
                 </div>
@@ -59,12 +59,11 @@
                     <div class="heading-block">
                         <img src="img/tyres.png" alt="">
                         <div class="heading">
-                            <div class="heading-title">Дарим<br>бонусы</div>
+                            <div class="heading-title">Дарим бонусы</div>
                             <div class="heading-subtitle">
-                                За совершенные покупки<br>в интернет-магазине<br><span>
-                                    <a style="color: #fff; text-decoration: none; font-weight: bold;" href="https://kamatyres.shop/" target="blank">kamatyres.shop</a>
-                                </span>
+                                За совершенные покупки<br>в интернет-магазине <span style="font-weight: bold;">kamatyres.shop</span>
                             </div>
+                            <a href="https://kamatyres.shop/" class="button" target="blank">Перейти на сайт</a>
                         </div>
                     </div>
                 </div>
@@ -74,7 +73,7 @@
                     <div class="heading-block">
                         <img src="img/coffee.png" alt="">
                         <div class="heading">
-                            <div class="heading-title">Возвращаем<br>10%&nbsp;бонусами</div>
+                            <div class="heading-title">Возвращаем&nbsp;10%<br>бонусами</div>
                             <div class="heading-subtitle">
                                 За покупку ароматного кофе
                             </div>
@@ -85,71 +84,60 @@
         </div>
         
         <a href="#top-second" id="top-second" class="top-second"><span></span></a>
-	    <!-- <a href="#participant" id="down"><span></span>Подробнее</a> -->
     </section>
-    <section id="participant" class="section participant">
-        <div class="container">
-            <div class="section-title wow fadeInUp">Как стать участником&nbsp;клуба</div>
-            <div class="section-items">
-                <div class="item wow fadeInUp" data-wow-delay="0.2s">
-                    <div class="item-image-block">
-                        <img src="img/card.svg" class="item-image card" alt="card">
-                        <img src="img/shape-card.svg" alt="shape-card">
+    <section id="participant" class="section wow fadeInUp">
+        <div class="container participant">
+            <div>
+                <div class="section-heading">Как стать<br>участником&nbsp;клуба?</div>
+                <div class="section-items">
+                    <div class="item">
+                        <div class="count">01</div>
+                        <div class="title participant-title">Получите&nbsp;на&nbsp;АЗС бесплатную карту</div>
                     </div>
-                    <div>Получите на АЗС<br>бесплатную карту</div>
-                </div>
-                <div class="item wow fadeInUp" data-wow-delay="0.4s">
-                    <div class="item-image-block">
-                        <img src="img/receipt.svg" class="item-image receipt" alt="receipt">
-                        <img src="img/shape-receipt.svg" alt="shape-receipt">
+                    <div class="item">
+                        <div class="count">02</div>
+                        <div class="title participant-title">Сохраните&nbsp;чек c&nbsp;персональным кодом</div>
                     </div>
-                    <div>Сохраните чек<br>после любой покупки</div>
-                </div>
-                <div class="item wow fadeInUp" data-wow-delay="0.6s">
-                    <div class="item-image-block">
-                        <img src="img/auth.svg" class="item-image card" alt="auth">
-                        <img src="img/shape-card.svg" alt="shape-card">
+                    <div class="item">
+                        <div class="count">03</div>
+                        <div class="title participant-title">Активируйте<br>карту</div>
                     </div>
-                    <div>Активируйте<br>карту</div>
                 </div>
+            </div>
+            <div class="item-image-block">
+                <img src="img/card.svg" class="card" alt="card">
             </div>
         </div>
     </section>
     <section class="section scale">
         <div class="container wow fadeInUp" data-wow-delay="0.2s">
             <div class="dflex align-center justify-space-center flex-wrap">
-                <img style="margin: 0 10px;" src="img/scale-percent.svg" alt="scale-percent">
-                <div>
-                    <div class="section-title">Шкала начисления бонусов</div>
-                    <div class="dflex justify-space-center flex-wrap">
-                        <div>
-                            <div class="scale-name">Серебряный - 1,5%</div>
-                            <div class="scale-subname">До 5 000 ₽</div>
+                <div class="section-heading">Шкала начисления бонусов</div>
+                <div class="section-items">
+                    <div class="item">
+                        <div class="scale-item silver"></div>
+                        <div class="participant-title">
+                            <div class="title">Серебряный&nbsp;-&nbsp;1,5%</div>
+                            <div class="subtitle">До 5 000 ₽</div>
                         </div>
-                        <div>
-                            <div class="scale-name">Золотой - 3%</div>
-                            <div class="scale-subname">От 5 000 ₽ до 15 000 ₽</div>
+                    </div>
+                    <div class="item">
+                        <div class="scale-item gold"></div>
+                        <div class="participant-title">
+                            <div class="title">Золотой&nbsp;-&nbsp;3%</div>
+                            <div class="subtitle">От 5 000 ₽ до 15 000 ₽</div>
                         </div>
-                        <div>
-                            <div class="scale-name">Платиновый - 5%</div>
-                            <div class="scale-subname">Более 15 000 ₽</div>
+                    </div>
+                    <div class="item">
+                        <div class="scale-item platinum"></div>
+                        <div class="participant-title">
+                            <div class="title">Платиновый&nbsp;-&nbsp;5%</div>
+                            <div class="subtitle">Более 15 000 ₽</div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-    <section class="section order">
-        <!-- <div class="order-visible">
-            <div class="order-rotated">
-                <div class="order-container">
-                    <div class="order-title">Как стать участником клуба?</div>
-                </div>
-            </div>
-            <div class="order-container">
-                <div class="order-title">Зарегистрироваться сейчас</div>
-            </div>
-        </div> -->
     </section>
     <section class="section order">
         <div class="container">
@@ -157,19 +145,41 @@
                 <div class="tab">
                     <input type="checkbox" id="chck1">
                     <label class="tab-label" for="chck1">
-                        <div class="order-title">Как получить больше бонусов</div>
+                        <div class="title">Как потратить бонусы?</div>
                     </label>
                     <div class="tab-content">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum, reiciendis!
+                        <div style="margin-bottom: 15px;">Предъявите карту оператору АЗС для оплаты бонусами: <b>1&nbsp;бонус&nbsp;=&nbsp;1&nbsp;₽</b></div>
+                        <div>Накопленными бонусами можно оплатить до 99% стоимости топлива или товаров кафе и магазина.</div>
                     </div>
                 </div>
                 <div class="tab">
                     <input type="checkbox" id="chck2">
                     <label class="tab-label" for="chck2">
-                        <div class="order-title">Как получить больше бонусов</div>
+                        <div class="title">Как получить больше бонусов</div>
                     </label>
                     <div class="tab-content">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. A, in!
+                        <div class="dflex align-center mb20">
+                            <img class="tab-image" src="img/atm-zenit.svg" alt="">
+                            <div>
+                                <p><b>Используйте карту для оплаты товаров и услуг, пополнив ее от 1&nbsp;₽ до 15&nbsp;000&nbsp;₽ одним из способов:</b></p>
+                                <div>- Наличными <b><a href="https://www.zenit.ru/offices/" style="text-decoration: underline; color: #00b274;" target="blank">в банкоматах Банка ЗЕНИТ и банков-партнеров;</a></b> </div>
+                                <div>- Переводом <b><a href="https://www.card2card.zenit.ru" style="text-decoration: underline; color: #00b274;" target="blank">с другой банковской карты</a></b> без комиссии</div>
+                            </div>
+                        </div>
+                        <div class="dflex align-center mb20">
+                            <img class="tab-image" src="img/atm-zenit.svg" alt="">
+                            <div>
+                                <p><b>Дополнительные бонусы при оплате картой составят:</b></p>
+                                <div>- 1,5% от суммы покупок на АЗС;</div>
+                                <div>- 1% от суммы покупок в других торговых точках.</div>
+                            </div>
+                        </div>
+                        <div class="dflex align-center">
+                            <img class="tab-image" src="img/atm-zenit.svg" alt="">
+                            <div>
+                                <p><b>Получите приветственные бонусы за регистрацию карты в личном кабинете.</b></p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -251,7 +261,7 @@
                     <div style="font-weight: 700;" id="registration-open">Регистрация</div>
                     <div style="font-weight: 300;" id="login">Забыли пароль?</div>
                 </div>
-                <button class="button primary">Войти</button>
+                <button class="button">Войти</button>
             </div>
         </div>
     </div>
