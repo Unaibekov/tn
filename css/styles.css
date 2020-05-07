@@ -785,7 +785,7 @@ input:checked ~ .tab-content {
 }
 #registration-open {
     background: gray;
-    margin-right: 20px;
+    margin-right: 10px;
     box-shadow: 0px 7px 30px rgba(125, 136, 132, 0.4);
 }
 #registration-open:hover {
@@ -816,9 +816,6 @@ input:checked ~ .tab-content {
     }
     .section-items {
         flex-direction: column;
-    }
-    #registration-open, #login {
-        margin: 10px 0 20px;
     }
     .heading {
         width: 100%;
@@ -945,6 +942,7 @@ input:checked ~ .tab-content {
 }
 
 @media (max-width: 575.98px) {
+    
     .tab-block-info {
         flex-basis: 100%;
     }
@@ -991,15 +989,16 @@ input:checked ~ .tab-content {
 }
 
 @media (max-width: 414px) {
+    .button {
+        font-size: 14px;
+        padding: 15px;
+    }
     .heading-title {
         font-size: 38px;
     }
     .heading-subtitle {
         font-size: 22px;
         margin: 15px 0 20px;
-    }
-    #registration-open, #login {
-        margin: 10px 0 15px;
     }
 }
 @media (max-width: 375px) {
@@ -1009,7 +1008,4 @@ input:checked ~ .tab-content {
 }
 
 @media (max-width: 320px) {
-    #registration-open, #login {
-        margin: 5px 0 10px;
-    }
 }
