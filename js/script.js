@@ -6,7 +6,9 @@ $( () => {
 		windowTop > 150 ? $('.header').addClass('header-shadow') : $('.header').removeClass('header-shadow');
 		windowTop > 150 ? $('.logoName').addClass('logoName-scroll') : $('.logoName').removeClass('logoName-scroll');
         windowTop > 150 ? $('.nav-link').addClass('nav-link-scroll') : $('.nav-link').removeClass('nav-link-scroll');
-        windowTop > 150 ? $('#auth').addClass('auth-scroll') : $('#auth').removeClass('auth-scroll');
+		windowTop > 150 ? $('#auth').addClass('auth-scroll') : $('#auth').removeClass('auth-scroll');
+        windowTop > 150 ? $('.auth-mobile').addClass('auth-mobile-scroll') : $('.auth-mobile').removeClass('auth-mobile-scroll');
+		
         windowTop > 150 ? $('.contacts').addClass('contacts-scroll') : $('.contacts').removeClass('contacts-scroll');
 		// windowTop > 100 ? $('.nav').addClass('nav-scroll') : $('.nav').removeClass('nav-scroll');
         windowTop > 250 ? $('#top-second').addClass('top-second-open') : $('#top-second').removeClass('top-second-open');
