@@ -943,6 +943,9 @@ input:checked ~ .tab-content {
 }
 
 @media (max-width: 575.98px) {
+    .tab-block-info {
+        flex-basis: 100%;
+    }
     .container {
         width: 90%;
     }
