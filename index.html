@@ -155,19 +155,23 @@
                 <div class="tab">
                     <input type="checkbox" id="chck2">
                     <label class="tab-label" for="chck2">
-                        <div class="title">Как получить больше бонусов</div>
+                        <div class="title">Как получить больше бонусов?</div>
                     </label>
                     <div class="tab-content">
                         <div class="dflex align-center mb20">
-                            <img class="tab-image" src="img/atm-zenit.svg" alt="">
-                            <div>
+                            <div class="tab-block-image">
+                                <img class="tab-image" src="img/atm-zenit.svg" alt="">
+                            </div>
+                            <div class="tab-block-info">
                                 <p><b>Используйте карту для оплаты товаров и услуг, пополнив ее от 1&nbsp;₽ до 15&nbsp;000&nbsp;₽ одним из способов:</b></p>
                                 <div>- Наличными <b><a href="https://www.zenit.ru/offices/" style="text-decoration: underline; color: #00b274;" target="blank">в банкоматах Банка ЗЕНИТ и банков-партнеров;</a></b> </div>
                                 <div>- Переводом <b><a href="https://www.card2card.zenit.ru" style="text-decoration: underline; color: #00b274;" target="blank">с другой банковской карты</a></b> без комиссии</div>
                             </div>
                         </div>
                         <div class="dflex align-center mb20">
-                            <img class="tab-image" src="img/atm-zenit.svg" alt="">
+                            <div class="tab-block-image">
+                                <img class="tab-image" src="img/pos.svg" alt="">
+                            </div>
                             <div>
                                 <p><b>Дополнительные бонусы при оплате картой составят:</b></p>
                                 <div>- 1,5% от суммы покупок на АЗС;</div>
@@ -175,7 +179,9 @@
                             </div>
                         </div>
                         <div class="dflex align-center">
-                            <img class="tab-image" src="img/atm-zenit.svg" alt="">
+                            <div class="tab-block-image">
+                                <img class="tab-image" src="img/card.svg" alt="">
+                            </div>
                             <div>
                                 <p><b>Получите приветственные бонусы за регистрацию карты в личном кабинете.</b></p>
                             </div>
@@ -257,11 +263,11 @@
                 <button id="close" class="close">&times;</button>
                 <input type="text" class="input" placeholder="Нижний номер карты (17 цифр)">
                 <input type="password" class="input input-password" placeholder="Пароль">
-                <div class="flex-wrap dflex justify-space-between align-center">
-                    <div style="font-weight: 700;" id="registration-open">Регистрация</div>
-                    <div style="font-weight: 300;" id="login">Забыли пароль?</div>
+                <div id="login">Забыли пароль?</div>
+                <div class="dflex align-center">
+                    <button id="registration-open" class="button">Регистрация</button>
+                    <button class="button">Войти</button>
                 </div>
-                <button class="button">Войти</button>
             </div>
         </div>
     </div>
