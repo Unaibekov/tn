@@ -261,7 +261,7 @@
             <div class="modal-inner">
                 <h3 class="modal-title">Вход в кабинет</h3>
                 <button id="close" class="close">&times;</button>
-                <input type="text" class="input" placeholder="Нижний номер карты (17 цифр)">
+                <input type="text" class="input mt20" placeholder="Нижний номер карты (17 цифр)">
                 <input type="password" class="input input-password" placeholder="Пароль">
                 <div id="login">Забыли пароль?</div>
                 <div class="dflex align-center">
@@ -272,10 +272,23 @@
         </div>
     </div>
     <div id="modalMail" class="modal">
-        <div class="modal-dialog">
+        <div class="modal-dialog feedback">
             <div class="modal-inner">
                 <h3 class="modal-title">Обратная связь</h3>
+                <div class="mt10 mb20">Заполните форму и мы свяжемся с Вами в ближайшее время.</div>
+                <div class="dflex mt20">
+                    <input type="text" class="input mr10" placeholder="Фамилия">
+                    <input type="text" class="input mr10" placeholder="Имя">
+                    <input type="text" class="input" placeholder="Отчество">
+                </div>
+                <div class="dflex">
+                    <input type="text" class="input mr10" placeholder="email">
+                    <input type="text" class="input mr10" placeholder="Телефон">
+                    <input type="text" class="input" placeholder="Тип обращения">
+                </div>
+                <textarea name="" id="" cols="1" rows="5" placeholder="Ваше сообщение"></textarea>
                 <button id="closeModalMail" class="close">&times;</button>
+                <button style="width: unset;" class="button">Отправить</button>
             </div>
         </div>
     </div>
